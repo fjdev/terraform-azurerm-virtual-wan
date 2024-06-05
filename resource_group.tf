@@ -6,5 +6,5 @@ module "resource_group" {
   name       = var.resource_group_name
   location   = var.location
   managed_by = var.managed_by
-  tags       = try(var.tags.resource_group, null)
+  tags       = try(var.tags.virtual_hub, null)
 }

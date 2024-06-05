@@ -6,5 +6,5 @@ resource "azurerm_virtual_wan" "vwan" {
   allow_branch_to_branch_traffic    = var.allow_branch_to_branch_traffic
   office365_local_breakout_category = var.office365_local_breakout_category
   type                              = var.type
-  tags                              = try(var.tags.virtual_wan, var.tags)
+  tags                              = try(var.tags.virtual_wan, null)
 }
