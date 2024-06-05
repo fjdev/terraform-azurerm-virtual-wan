@@ -9,7 +9,7 @@ module "virtual_hub" {
   location               = coalesce(each.value.location, var.location)
   address_prefix         = each.value.address_prefix
   hub_routing_preference = each.value.hub_routing_preference
-  route                  = each.value.route
+  routes                 = each.value.routes
   sku                    = each.value.sku
   virtual_wan_id         = azurerm_virtual_wan.vwan.id
   managed_by             = each.value.managed_by

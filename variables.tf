@@ -62,7 +62,7 @@ variable "virtual_hubs" {
     location               = optional(string)
     address_prefix         = optional(string)
     hub_routing_preference = optional(string)
-    route = optional(list(object({
+    routes = optional(list(object({
       address_prefixes    = list(string)
       next_hop_ip_address = string
     })))
