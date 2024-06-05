@@ -42,3 +42,15 @@ variable "tags" {
   default     = null
   description = "(Optional) A mapping of tags to assign to the Virtual WAN."
 }
+
+variable "deploy_resource_group" {
+  type        = bool
+  default     = true
+  description = "(Optional) Specifies whether to deploy the resource group or not. Defaults to true."
+}
+
+variable "managed_by" {
+  type        = string
+  default     = null
+  description = "(Optional) The ID of the resource or application that manages this Resource Group."
+}
